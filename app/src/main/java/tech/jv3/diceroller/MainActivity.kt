@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {rollDice()}
 
+        val clearButton: Button = findViewById(R.id.clear_button)
+        clearButton.setOnClickListener {clear()}
+
         val countUpButton: Button = findViewById(R.id.count_up_button)
         countUpButton.setOnClickListener {countUp()}
     }
@@ -32,6 +35,13 @@ class MainActivity : AppCompatActivity() {
         dice1Val = (1..6).random()
         diceImage1.setImageResource(getImageResource(dice1Val))
         dice2Val = (1..6).random()
+        diceImage2.setImageResource(getImageResource(dice2Val))
+    }
+
+    private fun clear() {
+        dice1Val = 0
+        dice2Val = 0
+        diceImage1.setImageResource(getImageResource(dice1Val))
         diceImage2.setImageResource(getImageResource(dice2Val))
     }
 

@@ -34,20 +34,28 @@
         />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/roll_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/roll_dice"
-        android:layout_gravity="center_horizontal"
-    />
 
-    <Button
-        android:id="@+id/count_up_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/count_up"
-        android:layout_gravity="center_horizontal"
-    />
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/roll_dice" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/clear"
+        />
+
+        <Button
+            android:id="@+id/count_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/count_up"
+        />
 
 </LinearLayout>
